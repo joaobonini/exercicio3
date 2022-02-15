@@ -1,0 +1,10 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-around_medium">
+			<h1 class="slds-text-heading_large">Exercicio 3</h1>
+		</div>
+		<template for:each={objetos} for:item="obj">
+			<p key={obj.cod}>Cod: {obj.cod}, Nome: {obj.name}, Artista: {obj.artista}, Album: {obj.album}</p>
+		</template>
+	</lightning-card>
+</template>
